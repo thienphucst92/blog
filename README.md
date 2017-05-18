@@ -19,7 +19,7 @@ The following is a list of **required** features of the application you'll build
 
 > HINT: Mark the items you completed with [x] as you go
 
-* [ ] Users can create, edit, and delete Articles from the database using their Rails application.
+* [x] Users can create, edit, and delete Articles from the database using their Rails application.
 * [ ] User can create a new Article, formatted using the Markdown language.
 * [ ] User can see how long ago the Article was created.
 * [ ] There is one Article that introduces the App Creator with name & picture.
