@@ -1,17 +1,17 @@
-# Pre-work - *Name of App Here*
+# Pre-work - *blog*
 
 > HINT: Please
 > - include this README.md in your project and fill out the information. 
 > - remove the `README.rdoc` file that Rails generates. 
 > - remove all the HINT blocks in this file.
 
-**Name of your app** is a Ruby on Rails blog application.
+**blog** is a Ruby on Rails blog application.
 
-Submitted by: **Your Name Here**
+Submitted by: **Phuc Tran**
 
-Time spent: **X** hours spent in total
+Time spent: **1** hours spent in total
 
-URL: **Insert your Heroku URL here**
+URL: **https://lit-reef-79283.herokuapp.com**
 
 ## User Stories
 
@@ -20,7 +20,7 @@ The following is a list of **required** features of the application you'll build
 > HINT: Mark the items you completed with [x] as you go
 
 * [x] Users can create, edit, and delete Articles from the database using their Rails application.
-* [ ] User can create a new Article, formatted using the Markdown language.
+* [x] User can create a new Article, formatted using the Markdown language.
 * [ ] User can see how long ago the Article was created.
 * [ ] There is one Article that introduces the App Creator with name & picture.
 * [ ] User see a search form on the Articles page.

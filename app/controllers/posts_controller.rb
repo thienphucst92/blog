@@ -5,6 +5,7 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
   end
 
   # GET /posts/1
