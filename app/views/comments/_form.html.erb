@@ -1,0 +1,6 @@
+<%= form_for [@post, Comment.new] do |f| %>
+	<div class="form-line">
+    <%= f.text_field :content, placeholder: "Comment...", class: "form-controler", required: true %>
+    <%= f.submit "Comment", class: "btn btn-primary" %>
+  </div>
+<% end %>
