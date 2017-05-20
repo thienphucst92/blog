@@ -9,7 +9,7 @@
 
 Submitted by: **Phuc Tran**
 
-Time spent: **1** hours spent in total
+Time spent: **2.5** hours spent in total
 
 URL: **https://lit-reef-79283.herokuapp.com**
 
