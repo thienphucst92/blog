@@ -29,8 +29,8 @@ The following is a list of **required** features of the application you'll build
 * [x] User can create, edit, and delete comments on an Article.
 * [x] User can navigate the application with a responsive navbar.
       http://v4-alpha.getbootstrap.com/examples/navbar/.
-* [ ] User can Sign Up, Log In, & Sign Out of our application using the Devise gem.      
-* [ ] The navbar will be responsive as well as **smart**, showing the user logical options related to authentication.
+* [x] User can Sign Up, Log In, & Sign Out of our application using the Devise gem.      
+* [x] The navbar will be responsive as well as **smart**, showing the user logical options related to authentication.
 * [ ] Only users that are logged in can create Articles.
 * [ ] Users can only edit & delete their own Articles.
 * [ ] User can only edit & delete their own comments.

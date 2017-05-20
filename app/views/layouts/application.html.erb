@@ -14,19 +14,22 @@
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <a class="navbar-brand" href="#">Blog</a>
+      <a class="navbar-brand" href="<%= root_path %>">Blog</a>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Sign up</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Log in</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Log out</a>
-          </li>
+          <% if user_signed_in? %>
+            <li class="nav-item">
+              <a class="nav-link" data-method="delete" href="<%= destroy_user_session_path %>">Log out</a>
+            </li>
+          <% else %>
+            <li class="nav-item active">
+              <a class="nav-link" href="<%= new_user_registration_path %>">Sign up</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= new_user_session_path %>">Log in</a>
+            </li>
+          <% end %>
         </ul>
         <form class="form-line">
           <%= form_tag(posts_path, :method => "GET", :id => "search-form") do %>
@@ -36,6 +39,16 @@
         </form>
       </div>
     </nav>
+
+    <!--- Flash Notice -->
+    <% unless flash.empty? %>
+    <div class="container">
+      <%= flash.each do |key, value| %>
+      <%= value %>
+      <%end %>
+      <% end %>
+    </div>
+
 
     <!--- yield to controller --->
     <div class="Container">
