@@ -1,12 +1,5 @@
 <p id="notice"><%= notice %></p>
 
-<form class="form-line">
-  <%= form_tag(posts_path, :method => "GET", :id => "search-form") do %>
-  <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
-  <%= submit_tag "Search" %>
-  <% end %>
-</form>
-
 <h1>Posts</h1>
 
 <table>

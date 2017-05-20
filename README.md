@@ -1,8 +1,8 @@
 # Pre-work - *blog*
 
 > HINT: Please
-> - include this README.md in your project and fill out the information. 
-> - remove the `README.rdoc` file that Rails generates. 
+> - include this README.md in your project and fill out the information.
+> - remove the `README.rdoc` file that Rails generates.
 > - remove all the HINT blocks in this file.
 
 **blog** is a Ruby on Rails blog application.
@@ -27,7 +27,7 @@ The following is a list of **required** features of the application you'll build
 * [x] When the User attempts to delete an Article there is an alert modal which asks the User to confirm deletion of that specific Article.
 * [x] User can submit a search term to find Articles with titles or body containing search terms.
 * [x] User can create, edit, and delete comments on an Article.
-* [ ] User can navigate the application with a responsive navbar.
+* [x] User can navigate the application with a responsive navbar.
       http://v4-alpha.getbootstrap.com/examples/navbar/.
 * [ ] User can Sign Up, Log In, & Sign Out of our application using the Devise gem.      
 * [ ] The navbar will be responsive as well as **smart**, showing the user logical options related to authentication.
@@ -49,13 +49,13 @@ The following **additional** features are implemented:
 
 - [ ] List anything else that you can get done to improve the app functionality!
 
-## Video Walkthrough 
+## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
 > HINT: You can put a `walkthrough.gif` file in your project folder, add to git, and use the following syntax to embed it:  
-> `![Video Walkthrough](walkthrough.gif)` 
-> 
+> `![Video Walkthrough](walkthrough.gif)`
+>
 
 ![Video Walkthrough](/path/to/your/gif/file)
 
