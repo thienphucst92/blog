@@ -9,7 +9,7 @@
 
 Submitted by: **Phuc Tran**
 
-Time spent: **2.5** hours spent in total
+Time spent: **3** hours spent in total
 
 URL: **https://lit-reef-79283.herokuapp.com**
 
@@ -31,8 +31,8 @@ The following is a list of **required** features of the application you'll build
       http://v4-alpha.getbootstrap.com/examples/navbar/.
 * [x] User can Sign Up, Log In, & Sign Out of our application using the Devise gem.      
 * [x] The navbar will be responsive as well as **smart**, showing the user logical options related to authentication.
-* [ ] Only users that are logged in can create Articles.
-* [ ] Users can only edit & delete their own Articles.
+* [x] Only users that are logged in can create Articles.
+* [x] Users can only edit & delete their own Articles.
 * [ ] User can only edit & delete their own comments.
 
 
