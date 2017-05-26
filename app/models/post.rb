@@ -5,4 +5,10 @@ class Post < ApplicationRecord
 	def self.search(search)
 		where("title || body ILIKE ?", "%#{search}%")
 	end
+
+  def created_by
+    user = User.find(user_id)
+    user.email
+  end
+
 end

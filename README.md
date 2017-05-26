@@ -1,10 +1,5 @@
 # Pre-work - *blog*
 
-> HINT: Please
-> - include this README.md in your project and fill out the information.
-> - remove the `README.rdoc` file that Rails generates.
-> - remove all the HINT blocks in this file.
-
 **blog** is a Ruby on Rails blog application.
 
 Submitted by: **Phuc Tran**
@@ -16,8 +11,6 @@ URL: **https://lit-reef-79283.herokuapp.com**
 ## User Stories
 
 The following is a list of **required** features of the application you'll build for our Pre-work.
-
-> HINT: Mark the items you completed with [x] as you go
 
 * [x] Users can create, edit, and delete Articles from the database using their Rails application.
 * [x] User can create a new Article, formatted using the Markdown language.
@@ -33,17 +26,15 @@ The following is a list of **required** features of the application you'll build
 * [x] The navbar will be responsive as well as **smart**, showing the user logical options related to authentication.
 * [x] Only users that are logged in can create Articles.
 * [x] Users can only edit & delete their own Articles.
-* [ ] User can only edit & delete their own comments.
+* [x] User can only edit & delete their own comments.
 
 
 The following **optional** features are implemented:
 
-* [ ] User can see who created the Article.
-* [ ] User can see how many views an Article has.
-* [ ] User can see who created the Comment.
+* [x] User can see who created the Article.
+* [x] User can see how many views an Article has.
+* [x] User can see who created the Comment.
 * [ ] User can add "tags" to a Article, and filter Articles by tag.
-
-> HINT: if you are unsure how to implement the Search feature, you can Google how to implement a simple search form. For example, one of the sites you will find is [this](http://www.jorgecoca.com/buils-search-form-ruby-rails/)
 
 The following **additional** features are implemented:
 

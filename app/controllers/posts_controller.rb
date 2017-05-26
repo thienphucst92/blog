@@ -17,6 +17,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @post.update_attribute(:views, @post.views + 1)
   end
 
   # GET /posts/new
