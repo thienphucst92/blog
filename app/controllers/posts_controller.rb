@@ -16,7 +16,8 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-    @post.update_attribute(:views, @post.views + 1)
+    updated_views = @post.views + 1
+    @post.update_attribute(:views, updated_views)
   end
 
   # GET /posts/new
