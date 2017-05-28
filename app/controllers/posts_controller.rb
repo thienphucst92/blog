@@ -5,8 +5,6 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @posts = Post.all
-    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
-
     if params[:search]
       @posts = Post.search(params[:search]).order("created_at DESC")
     else
@@ -17,6 +15,7 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
     @post.update_attribute(:views, @post.views + 1)
   end
 

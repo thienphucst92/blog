@@ -1,22 +1,35 @@
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
+<!-- Blog Post -->
+
+<!-- Title -->
+<h1><%= @post.title %></h1>
+
+<!-- Author -->
+<p class="lead">
+  by <a href="#"><%= @post.created_by %></a>
 </p>
 
+<!-- Date/Time -->
+<p><span class="fa fa-clock-o" aria-hidden="true"></span> <%= time_ago_in_words(@post.created_at) %></p>
+<hr>
+
+<!-- Post Content -->
 <p>
-  <strong>Body:</strong>
-  <%= @post.body %>
+  <%= @markdown.render(@post.body).html_safe %>
 </p>
 
-<% if user_signed_in? %>
+<hr>
+
+<% if signed_in? %>
   <% if @post.user_id == current_user.id %>
-    <td><%= link_to 'Edit', edit_post_path(@post) %></td>
-    <td><%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %></td>
-    <td><%= link_to 'Back', posts_path %></td>
+    <%= link_to 'Edit', edit_post_path(@post) %>
+    <%= link_to "Delete", @post, method: :delete, data: { confirm: "Are you sure you want to delete this post?" } %>
+    <hr>
   <% end %>
 <% end %>
 
-<h3>Comments</h3>
+<h2> Comments </h2>
 <%= render @post.comments %>
+
+<hr>
 
 <%= render 'comments/form' %>
