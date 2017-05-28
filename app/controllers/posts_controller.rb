@@ -16,6 +16,9 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    # Dont know why this not work:
+    # @post.update_attribute(:views, @post.views + 1)
+    # But this work: (when deploy on heroku)
     updated_views = @post.views + 1
     @post.update_attribute(:views, updated_views)
   end
