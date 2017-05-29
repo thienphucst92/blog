@@ -29,11 +29,12 @@
     <div class="row">
         <ul>
           <% tags = Tag.all %>
-
           <% tags.each do |tag|%>
-            <li>
-              <%= link_to tag.name, tag_path(tag.name) %>
-            </li>
+            <% if tag.posts.any? %>
+              <li>
+                <%= link_to tag.name, tag_path(tag.name) %>
+              </li>
+            <% end %>
           <% end %>
         </ul>
     </div>
