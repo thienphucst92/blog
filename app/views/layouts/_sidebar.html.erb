@@ -8,45 +8,34 @@
       <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
       <%= submit_tag "Search" %>
       <% end %>
-      <!-- <input type="text" class="form-control">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">
-          <span class="glyphicon glyphicon-search"></span>
-        </button>
-      </span> -->
     </div>
-    <!-- /.input-group -->
   </div>
+
+  <!-- Blog Search Well -->
+  <div class="well">
+    <h4>Search by tags</h4>
+    <div class="input-group">
+      <%= form_tag(tags_path, :method => "GET", :id => "search-form") do %>
+      <%= text_field_tag :search, params[:search], placeholder: "Tag Name" %>
+      <%= submit_tag "Search" %>
+      <% end %>
+    </div>
+  </div>
+
 
   <!-- Blog Categories Well -->
   <div class="well">
     <h4>Tags</h4>
     <div class="row">
-      <div class="col-lg-6">
-        <ul class="list-unstyled">
-          <li><a href="#">ruby</a>
-          </li>
-          <li><a href="#">programing</a>
-          </li>
-          <li><a href="#">rails</a>
-          </li>
-          <li><a href="#">algorithm</a>
-          </li>
+        <ul>
+          <% tags = Tag.all %>
+
+          <% tags.each do |tag|%>
+            <li>
+              <%= link_to tag.name, tag_path(tag.name) %>
+            </li>
+          <% end %>
         </ul>
-      </div>
-      <!-- /.col-lg-6 -->
-      <div class="col-lg-6">
-        <ul class="list-unstyled">
-          <li><a href="#">fullstack</a>
-          </li>
-          <li><a href="#">database</a>
-          </li>
-          <li><a href="#">entrepreneur</a>
-          </li>
-        </ul>
-      </div>
-      <!-- /.col-lg-6 -->
     </div>
-    <!-- /.row -->
   </div>
 </div>

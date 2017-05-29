@@ -16,6 +16,11 @@
   </div>
 
   <div class="form-group">
+    <%= f.label :tag_list, "Tags (Optional)" %>
+    <%= f.text_field :tag_list, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
     <%= f.label :body %>
     <%= f.text_area :body, class: "form-control" %>
   </div>

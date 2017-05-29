@@ -4,9 +4,9 @@
 
 Submitted by: **Phuc Tran**
 
-Time spent: **3** hours spent in total
+Time spent: **10** hours spent in total
 
-URL: **https://lit-reef-79283.herokuapp.com**
+URL: **https://evening-hollows-45219.herokuapp.com/**
 
 ## User Stories
 
@@ -15,7 +15,7 @@ The following is a list of **required** features of the application you'll build
 * [x] Users can create, edit, and delete Articles from the database using their Rails application.
 * [x] User can create a new Article, formatted using the Markdown language.
 * [x] User can see how long ago the Article was created.
-* [ ] There is one Article that introduces the App Creator with name & picture.
+* [x] There is one Article that introduces the App Creator with name & picture.
 * [x] User see a search form on the Articles page.
 * [x] When the User attempts to delete an Article there is an alert modal which asks the User to confirm deletion of that specific Article.
 * [x] User can submit a search term to find Articles with titles or body containing search terms.
@@ -34,7 +34,7 @@ The following **optional** features are implemented:
 * [x] User can see who created the Article.
 * [x] User can see how many views an Article has.
 * [x] User can see who created the Comment.
-* [ ] User can add "tags" to a Article, and filter Articles by tag.
+* [x] User can add "tags" to a Article, and filter Articles by tag.
 
 The following **additional** features are implemented:
 

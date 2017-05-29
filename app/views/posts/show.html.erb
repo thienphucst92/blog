@@ -10,7 +10,18 @@
 
 <!-- Date/Time -->
 <p><span class="fa fa-clock-o" aria-hidden="true"></span> <%= time_ago_in_words(@post.created_at) %></p>
+
+<!-- Tagged -->
+<% if @tags.any? %>
+  <p>Tagged in:
+    <% @tags.each do |tag| %>
+      <%= link_to tag.name, tag_path(tag.name) %>
+    <% end %>
+  </p>
+<% end %>
+
 <hr>
+
 
 <!-- Post Content -->
 <p>
