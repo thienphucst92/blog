@@ -48,7 +48,7 @@ Here's a walkthrough of implemented user stories:
 > `![Video Walkthrough](walkthrough.gif)`
 >
 
-![Video Walkthrough](http://i.imgur.com/WTFtt4c.gifv)
+![Video Walkthrough](http://i.imgur.com/WTFtt4c.gif)
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
