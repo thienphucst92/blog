@@ -1,7 +1,7 @@
-<div class="container">
   <h1>Edit Comment</h1>
     <%= form_for [@post, @comment] do |f| %>
-      <%= f.text_field :content, label: "Comment", size: "100x10" %>
+      <div class="form-group">
+        <%= f.text_field :content, label: "Comment", class: "form-control" %>
+      </div>
       <%= f.button :submit, class: "btn btn-success" %>
     <% end %>
-</div>
