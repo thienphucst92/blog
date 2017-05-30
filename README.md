@@ -4,7 +4,7 @@
 
 Submitted by: **Phuc Tran**
 
-Time spent: **10** hours spent in total
+Time spent: **16** hours spent in total
 
 URL: **https://evening-hollows-45219.herokuapp.com/**
 
