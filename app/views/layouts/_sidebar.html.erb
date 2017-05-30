@@ -4,8 +4,8 @@
   <div class="well">
     <h4>Blog Search</h4>
     <div class="input-group">
-      <%= form_tag(posts_path, :method => "GET", :id => "search-form") do %>
-      <%= text_field_tag :search, params[:search], placeholder: "Search Posts" %>
+      <%= form_tag(posts_path, :method => "GET") do %>
+      <%= text_field_tag :search_post, params[:search_post], placeholder: "Search Posts" %>
       <%= submit_tag "Search" %>
       <% end %>
     </div>
@@ -15,7 +15,7 @@
   <div class="well">
     <h4>Search by tags</h4>
     <div class="input-group">
-      <%= form_tag(tags_path, :method => "GET", :id => "search-form") do %>
+      <%= form_tag(tags_path, :method => "GET") do %>
       <%= text_field_tag :search, params[:search], placeholder: "Tag Name" %>
       <%= submit_tag "Search" %>
       <% end %>
